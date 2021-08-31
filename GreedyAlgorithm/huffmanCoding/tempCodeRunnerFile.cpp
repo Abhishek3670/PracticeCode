@@ -1,0 +1,1 @@
+ cout << minHeap.top()->data<<endl ;

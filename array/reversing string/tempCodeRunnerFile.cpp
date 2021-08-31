@@ -1,0 +1,2 @@
+
+    string arr = "Hello";
