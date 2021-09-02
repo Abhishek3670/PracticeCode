@@ -22,9 +22,9 @@ int count(int arr[], int n, int k)
 
 int main()
 {
-    int arr[] = {1, 1, 1, 1, 1};
-    int n = 5;
-    int target = 3;
+    int arr[] = {2,3,6,7};
+    int n = 4;
+    int target = 7;
     int sum = 0;
     for (int i = 0; i < n; i++)
         sum += arr[i];
