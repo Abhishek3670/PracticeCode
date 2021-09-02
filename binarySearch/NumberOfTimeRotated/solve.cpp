@@ -17,12 +17,12 @@ int solve(vector<int> v)
         else if (v[l] > v[mid])
             r = mid - 1;
         else
-            l = mid + 1;
+            l = mid;
     }
     return -1;
 }
 int main()
 {
-    vector<int> v{7, 8, 1, 2, 3, 4, 5, 6};
-    cout << "No. of times Rotated : " <<solve(v);
+    vector<int> v{4, 5, 6, 0, 1, 2};
+    cout << "No. of times Rotated : " << solve(v);
 }
