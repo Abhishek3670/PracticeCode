@@ -3,7 +3,7 @@
 #include <string>
 #include <bits/stdc++.h>
 using namespace std;
-
+// this one is wrong for test case "abbbbbbbbbbb" , "aaaaaaaaaaab";
 bool isAnagram(string &a, string &b)
 {
     if (a == b)
@@ -41,9 +41,9 @@ bool solve(string a, string b)
 }
 int main()
 {
-    string a = "listen";
-    string b = "silent";
+    string a = "abbbbbbbbbbb";
+    string b = "aaaaaaaaaaab";
 
-    cout << isAnagram(a, b)<<endl;
+    cout << isAnagram(a, b) << endl;
     cout << solve(a, b);
 }
