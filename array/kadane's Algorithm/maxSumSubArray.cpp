@@ -23,7 +23,7 @@ int maxSubarraySum(int arr[], int n)
 }
 int main()
 {
-    int arr[] = {2, 1, -1, 2, -3};
+    int arr[] = {4, -10, 10, 2, -3};
     int len = sizeof(arr) / sizeof(arr[0]);
     printArray(arr, len);
     cout << endl;
