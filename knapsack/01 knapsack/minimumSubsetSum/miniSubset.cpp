@@ -46,9 +46,9 @@ vector<int> sumSubset(int arr[], int n, int k)
             else
                 t[i][j] = t[i - 1][j];
         }
-    for (int i = 1; i < n + 1; i++)
+    for (int i = 0; i < n + 1; i++)
     {
-        for (int j = 1; j < k + 1; j++)
+        for (int j = 0; j < k + 1; j++)
             cout << t[i][j] << " ";
         cout << endl;
     }

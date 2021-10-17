@@ -56,8 +56,6 @@ int longestCon(int arr[], int n)
 }
 int main(int argc, char const *argv[])
 {
-    int arr[] = {2, 6, 1, 4, 3, 8, 4, 9, 4};
-    int len = sizeof(arr) / sizeof(arr[0]);
     vector<int> v{2, 6, 1, 4, 3, 8, 4, 9, 4};
     cout << longestConsecutive(v);
     return 0;

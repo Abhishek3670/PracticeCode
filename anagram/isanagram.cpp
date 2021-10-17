@@ -4,6 +4,19 @@
 #include <bits/stdc++.h>
 using namespace std;
 // this one is wrong for test case "abbbbbbbbbbb" , "aaaaaaaaaaab";
+bool isAnagram2(string &a, string &b)
+{
+    int n1 = a.size();
+    int n2 = b.size();
+    if (n1 != n2)
+        return false;
+    sort(a.begin(), a.end());
+    sort(b.begin(), b.end());
+    for (int i = 0; i < n1; i++)
+        if (a[i] != b[i])
+            return false;
+    return true;
+}
 bool isAnagram(string &a, string &b)
 {
     if (a == b)
@@ -45,5 +58,6 @@ int main()
     string b = "aaaaaaaaaaab";
 
     cout << isAnagram(a, b) << endl;
+    cout << isAnagram2(a, b) << endl;
     cout << solve(a, b);
 }

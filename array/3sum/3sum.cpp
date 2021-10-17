@@ -2,6 +2,7 @@
 #include <bits/stdc++.h>
 
 using namespace std;
+// 3 sum zero
 
 vector<vector<int>> threeSum(vector<int> &nums)
 {
@@ -42,7 +43,6 @@ vector<vector<int>> threeSum(vector<int> &nums)
                 l++;
                 r--;
             }
-            cout << endl;
         }
         while (i + 1 < n && nums[i + 1] == nums[i])
             i++;

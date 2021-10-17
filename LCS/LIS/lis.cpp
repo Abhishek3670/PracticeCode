@@ -30,7 +30,7 @@ int longestSubsequence(int n, int a[])
 
         int index = binarySearch(tail, 0, lastIndex, a[i]);
         tail[index] = a[i];
-        cout<<tail[i]<<endl;
+        //  cout<<tail[i]<<endl;
         lastIndex = max(lastIndex, index);
     }
 
@@ -57,8 +57,8 @@ int LIS(int a[], int n)
 
 int main()
 {
-    int arr[] = {17, 16, 12, 2, 8, 17, 17};
+    int arr[] = {0, 1, 0, 3, 2, 3};
     int n = sizeof(arr) / sizeof(arr[0]);
-    cout <<" jjsjs "<< LIS(arr, n)<<endl;
-    cout << longestSubsequence(n,arr);
+    cout << LIS(arr, n) << endl;
+    cout << longestSubsequence(n, arr);
 }

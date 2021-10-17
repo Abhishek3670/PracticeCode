@@ -48,8 +48,8 @@ int main()
 {
     vector<int> v{3, 10, 4, 2, 1, 2, 6, 1, 7, 2, 9};
     int n = v.size();
-    // vector<int> ans = solve(v);
-    vector<int> ans = solveOn(v);
+    vector<int> ans = solve(v);
+    // vector<int> ans = solveOn(v);
     for (auto i : ans)
         cout << i << " ";
 }

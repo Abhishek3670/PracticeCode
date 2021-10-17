@@ -1,5 +1,5 @@
 // important
-// C++ program to Find the repeating 
+// C++ program to Find the repeating
 // and missing elements
 
 #include <bits/stdc++.h>
@@ -10,26 +10,30 @@ void printTwoElements(int arr[], int size)
 	int i;
 	cout << " The repeating element is ";
 
-	for (i = 0; i < size; i++) {
+	for (i = 0; i < size; i++)
+	{
 		if (arr[abs(arr[i]) - 1] > 0)
 			arr[abs(arr[i]) - 1] = -arr[abs(arr[i]) - 1];
 		else
 			cout << abs(arr[i]) << "\n";
 	}
-
+	cout << endl;
+	for (i = 0; i < size; i++)
+	{
+		cout << arr[i] << " ";
+	}
+	cout << endl;
 	cout << "and the missing element is ";
-	for (i = 0; i < size; i++) {
+	for (i = 0; i < size; i++)
+	{
 		if (arr[i] > 0)
 			cout << (i + 1);
 	}
 }
 
-/* Driver code */
 int main()
 {
-	int arr[] = { 7, 3, 4, 5, 5, 6, 2 };
+	int arr[] = {7, 3, 4, 5, 5, 6, 2};
 	int n = sizeof(arr) / sizeof(arr[0]);
 	printTwoElements(arr, n);
 }
-
-// This code is contributed by Shivi_Aggarwal
